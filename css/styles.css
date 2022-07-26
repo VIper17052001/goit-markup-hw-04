@@ -102,6 +102,7 @@ section {
 }
 .header-contact-item {
   margin-right: 50px;
+  align-items: center;
 }
 .header-contact-item:last-child {
   margin-right: 0;
@@ -113,10 +114,17 @@ section {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-contact-mail:hover,
 .header-contact-mail:focus {
   color: var(--first-text-color);
+}
+.contact-item {
+  margin-right: 10px;
+  fill: currentColor;
+  padding: 0;
 }
 .header-contact-tel {
   color: var(--second-text-color);
@@ -125,6 +133,8 @@ section {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-contact-tel:hover,
 .header-contact-tel:focus {
@@ -132,9 +142,16 @@ section {
 }
 /* Hero */
 .hero {
-  background-color: var(--first-background-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-background.jpg);
+  background-repeat: no-repeat;
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin: auto;
 }
 .hero-flex {
   text-align: center;
@@ -395,6 +412,7 @@ section {
 .header-logo,
 .footer-logo,
 .map-link,
+.contact-icon-link,
 .footer-contact-mail,
 .footer-contact-tel,
 .project-link {
