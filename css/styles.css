@@ -310,6 +310,14 @@ section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer-flex {
+  display: flex;
+}
+.address-flex {
+  display: flex;
+  flex-direction: column;
+  padding-right: 70px;
+}
 .footer-logo {
   color: var(--third-text-color);
   font-family: "Raleway";
@@ -472,6 +480,44 @@ section {
   fill: currentColor;
 }
 
+.social {
+  padding-top: 12px;
+  padding-bottom: 0px;
+  text-align: baseline;
+}
+.social-headline {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--third-text-color);
+  margin-bottom: 20px;
+}
+.social-soc {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: #2f303a;
+}
+.social-soc-link {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.social-soc-link:hover,
+.social-soc-link:focus {
+  background-color: #2196f3;
+  color: #fff;
+}
+.social-soc-icon {
+  fill: currentColor;
+}
 .header-item,
 .header-contact-item,
 .softskills-item,
