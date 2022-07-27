@@ -99,10 +99,10 @@ section {
 .header-contact-list {
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
 .header-contact-item {
   margin-right: 50px;
-  align-items: center;
 }
 .header-contact-item:last-child {
   margin-right: 0;
@@ -116,6 +116,8 @@ section {
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
+  align-items: center;
 }
 .header-contact-mail:hover,
 .header-contact-mail:focus {
@@ -135,6 +137,8 @@ section {
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
+  align-items: center;
 }
 .header-contact-tel:hover,
 .header-contact-tel:focus {
@@ -212,6 +216,13 @@ section {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+.softskills-img {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
 /* Occupation */
 .occupation {
 }
@@ -234,9 +245,33 @@ section {
   background-color: var(--second-background-color);
 }
 .team-flex {
-  background-color: transparent;
+  background-color: #fff;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.team-soc {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: #fff;
+}
+.team-soc-link {
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+}
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: #2196f3;
+  color: #fff;
+}
+.team-soc-icon {
+  fill: currentColor;
 }
 .team-headline {
   font-weight: 700;
@@ -267,6 +302,7 @@ section {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 /* Footer */
 .footer {
@@ -395,6 +431,29 @@ section {
 .project-link {
 }
 
+.clients {
+}
+.client-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.clients-headline {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.client-item {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 170px;
+}
+
 .header-item,
 .header-contact-item,
 .softskills-item,
@@ -402,7 +461,9 @@ section {
 .team-item,
 .footer-item,
 .portfolio-nav-item,
-.project-item {
+.project-item,
+.team-soc-item,
+.client-item {
   list-style-type: none;
 }
 
