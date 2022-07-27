@@ -450,8 +450,26 @@ section {
 .client-item {
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  /* width: 170px; */
+}
+.client-item:hover,
+.client-item:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+}
+.client-link {
+  color: #afb1b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 16px 32px;
-  width: 170px;
+}
+.client-link:hover,
+.client-link:focus {
+  color: #2196f3;
+}
+.client-icon {
+  fill: currentColor;
 }
 
 .header-item,
