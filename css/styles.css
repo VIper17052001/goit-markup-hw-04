@@ -470,7 +470,6 @@ section {
 .client-item {
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  /* width: 170px; */
 }
 .client-item:hover,
 .client-item:focus {
