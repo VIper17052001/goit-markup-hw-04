@@ -220,8 +220,10 @@ section {
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
-  padding: 25px 100px;
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* Occupation */
 .occupation {
@@ -312,11 +314,10 @@ section {
 }
 .footer-flex {
   display: flex;
+  align-items: baseline;
 }
 .address-flex {
-  display: flex;
-  flex-direction: column;
-  padding-right: 70px;
+  margin-right: 70px;
 }
 .footer-logo {
   color: var(--third-text-color);
@@ -425,8 +426,12 @@ section {
 .project-item {
   width: 370px;
 }
-.project-item:hover,
-.project-item:focus {
+.project-link {
+  display: block;
+}
+
+.project-link:hover,
+.project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -444,9 +449,6 @@ section {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-}
-
-.project-link {
 }
 
 .clients {
@@ -480,7 +482,8 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px 32px;
+  width: 170px;
+  height: 92px;
 }
 .client-link:hover,
 .client-link:focus {
